@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- 
+Objective: This project aims to create a responsive and visually appealing landing page for HaLee Threads of Culture. It should include navigation, animations, and proper structuring to ensure a seamless user experience.
+
+Requirement: The webpage must have a navbar, animated elements, and a fully responsive design to cater to different screen sizes. The layout should be intuitive and user-friendly.
+
+Use Cases:
+1. A potential customer visits the site to learn about HaLee Threads of Culture.
+2. A user navigates through different sections using the navbar.
+3. A visitor interacts with the animations and smooth transitions for a better user experience.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaLee Thread of Culture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+        }
+        .hero {
+            padding: 50px;
+            background: #ecf0f1;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+            flex-wrap: wrap;
+        }
+        .feature {
+            width: 30%;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .cta {
+            padding: 10px 20px;
+            background: #2980b9;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HaLee Thread of Culture</h1>
+        <p>Bringing Culture to Life Through Fashion</p>
+    </header>
+    
+    <section class="hero">
+        <h2>Authentic Adire & Textile Designs</h2>
+        <p>We specialize in handcrafted Adire fashion, bedding, and house articles. Elevate your style with our unique designs.</p>
+        <a href="#contact" class="cta">Shop Now</a>
+    </section>
+    
+    <section class="features">
+        <div class="feature">
+            <h3>Traditional & Modern Adire</h3>
+            <p>Experience a fusion of cultural heritage and contemporary fashion with our unique fabric designs.</p>
+        </div>
+        <div class="feature">
+            <h3>Home & Beddings</h3>
+            <p>Transform your space with our handmade home textiles, including beddings, curtains, and décor.</p>
+        </div>
+        <div class="feature">
+            <h3>Custom Orders</h3>
+            <p>Personalized designs crafted just for you. Choose your patterns and colors to make a statement.</p>
+        </div>
+    </section>
+    
+    <footer id="contact">
+        <p>Contact Us: 08140153421 | Email: rasheedahdada@gmail.com</p>
+        <p>Follow us on social media for the latest updates!</p>
+        <p>&copy; 2025 HaLee Thread of Culture. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
