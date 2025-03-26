@@ -1,60 +1,86 @@
 <!DOCTYPE html>
-<!-- 
-Objective: This project aims to create a responsive and visually appealing landing page for HaLee Threads of Culture. It should include navigation, animations, and proper structuring to ensure a seamless user experience.
+<!--
+Project Objective:
+- Design and develop a responsive landing page for a fictional product or service
+- Create a visually appealing, mobile-friendly webpage
+- Demonstrate proficiency in HTML and CSS layout techniques
 
-Requirement: The webpage must have a navbar, animated elements, and a fully responsive design to cater to different screen sizes. The layout should be intuitive and user-friendly.
+Project Requirements:
+- Use only HTML and CSS (no JavaScript)
+- Implement responsive design using CSS Flexbox or Grid
+- Ensure proper semantic HTML structure for accessibility
+- Include a Hero Section with headline, subheadline, and CTA button
+- Create a Responsive Features Section with three-column layout
+- Design a Footer Section with contact and copyright information
 
 Use Cases:
-1. A potential customer visits the site to learn about HaLee Threads of Culture.
-2. A user navigates through different sections using the navbar.
-3. A visitor interacts with the animations and smooth transitions for a better user experience.
+1. Marketing Landing Page: Showcase a product/service to potential customers
+2. Responsive Design Demonstration: Adapt to different screen sizes (mobile, tablet, desktop)
+3. User Engagement: Encourage user interaction through clear CTA and informative sections
 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Threads of Culture</title>
-    <link rel="stylesheet" href="styles.css"> <!-- External CSS file -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- FontAwesome Icons -->
+    <title>SolarSync - Smart Home Energy Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Threads of Culture</h1>
-        <p>Bringing Culture to Life Through Fashion</p>
-    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>SolarSync: Smart Home Energy Management</h1>
+                    <p>Revolutionize your home's energy efficiency with intelligent, real-time monitoring and optimization.</p>
+                    <a href="#" class="cta-button">
+                        <i class="fas fa-bolt"></i>
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <main>
-        <section class="hero">
-            <h1>Authentic Adire & Textile Designs</h1>
-            <p>Specializing in handmade Adire fashion, bedding, and house articles. Elevate your style with our unique designs.</p>
-            <a href="#contact" class="btn">Shop Now</a>
-        </section>
+    <section class="features container">
+        <div class="feature">
+            <img src="./dashboard.jpg" alt="Real-time Monitoring" class="feature-image">
+            <i class="fas fa-chart-line feature-icon"></i>
+            <h2>Real-time Monitoring</h2>
+            <p>Track your energy consumption instantly and identify potential savings.</p>
+        </div>
+        <div class="feature">
+            <img src="./A smart home.jpg" alt="Smart Optimization" class="feature-image">
+            <i class="fas fa-magic feature-icon"></i>
+            <h2>Smart Optimization</h2>
+            <p>Automated recommendations to reduce energy waste and lower bills.</p>
+        </div>
+        <div class="feature">
+            <img src="./solar panel.jpg" alt="Eco-friendly" class="feature-image">
+            <i class="fas fa-leaf feature-icon"></i>
+            <h2>Eco-friendly</h2>
+            <p>Reduce your carbon footprint and contribute to a sustainable future.</p>
+        </div>
+    </section>
 
-        <section class="features">
-            <article>
-                <i class="fas fa-tshirt"></i>
-                <h2>Modern Adire</h2>
-                <p>Experience a fusion of cultural heritage and contemporary fashion with our unique fabric designs.</p>
-            </article>
-            <article>
-                <i class="fas fa-home"></i>
-                <h2>Home Styling</h2>
-                <p>Transform your space with our handmade home textiles, including bedding, curtains, and décor.</p>
-            </article>
-            <article>
-                <i class="fas fa-palette"></i>
-                <h2>Custom Orders</h2>
-                <p>Visualized designs crafted just for you. Choose your patterns and colors to make a statement.</p>
-            </article>
-        </section>
-    </main>
-
-    <footer>
-        <section id="contact">
-            <p>Contact us: +2341234561 | Email: rasheedah24@gmail.com</p>
-            <p>Follow us on social media for the latest updates!</p>
-            <p>&copy; 2025 Threads of Culture. All Rights Reserved.</p>
-        </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-contact">
+                <i class="fas fa-envelope"></i>
+                <span>info@solarsync.com</span>
+                <i class="fas fa-phone"></i>
+                <span>(555) 123-4567</span>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <i class="far fa-copyright"></i>
+                2025 SolarSync. All rights reserved.
+            </div>
+        </div>
     </footer>
 </body>
 </html>
