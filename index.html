@@ -27,58 +27,88 @@ Use Cases:
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section class="hero">
+    <header class="hero">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>SolarSync: Smart Home Energy Management</h1>
                     <p>Revolutionize your home's energy efficiency with intelligent, real-time monitoring and optimization.</p>
-                    <a href="#" class="cta-button">
+                    <a href="#features" class="cta-button">
                         <i class="fas fa-bolt"></i>
                         Get Started
                     </a>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
-    <section class="features container">
-        <div class="feature">
-            <img src="./dashboard.jpg" alt="Real-time Monitoring" class="feature-image">
-            <i class="fas fa-chart-line feature-icon"></i>
-            <h2>Real-time Monitoring</h2>
-            <p>Track your energy consumption instantly and identify potential savings.</p>
-        </div>
-        <div class="feature">
-            <img src="./A smart home.jpg" alt="Smart Optimization" class="feature-image">
-            <i class="fas fa-magic feature-icon"></i>
-            <h2>Smart Optimization</h2>
-            <p>Automated recommendations to reduce energy waste and lower bills.</p>
-        </div>
-        <div class="feature">
-            <img src="./solar panel.jpg" alt="Eco-friendly" class="feature-image">
-            <i class="fas fa-leaf feature-icon"></i>
-            <h2>Eco-friendly</h2>
-            <p>Reduce your carbon footprint and contribute to a sustainable future.</p>
-        </div>
-    </section>
+    <!-- Features Section with improved responsiveness -->
+    <main>
+        <section id="features" class="features container">
+            <div class="feature">
+                <div class="feature-image-container">
+                    <img src="./dashboard.jpg" alt="Real-time Monitoring" class="feature-image">
+                    <i class="fas fa-chart-line feature-icon"></i>
+                </div>
+                <div class="feature-content">
+                    <h2>Real-time Monitoring</h2>
+                    <p>Track your energy consumption instantly and identify potential savings.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-image-container">
+                    <img src="./A smart home.jpg" alt="Smart Optimization" class="feature-image">
+                    <i class="fas fa-magic feature-icon"></i>
+                </div>
+                <div class="feature-content">
+                    <h2>Smart Optimization</h2>
+                    <p>Automated recommendations to reduce energy waste and lower bills.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-image-container">
+                    <img src="./solar panel.jpg" alt="Eco-friendly" class="feature-image">
+                    <i class="fas fa-leaf feature-icon"></i>
+                </div>
+                <div class="feature-content">
+                    <h2>Eco-friendly</h2>
+                    <p>Reduce your carbon footprint and contribute to a sustainable future.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <!-- Footer with improved semantic structure -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-contact">
-                <i class="fas fa-envelope"></i>
-                <span>info@solarsync.com</span>
-                <i class="fas fa-phone"></i>
-                <span>(555) 123-4567</span>
-            </div>
+            <nav class="footer-contact">
+                <ul>
+                    <li>
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:info@solarsync.com">info@solarsync.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <a href="tel:5551234567">(555) 123-4567</a>
+                    </li>
+                </ul>
+            </nav>
             <div class="footer-social">
-                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon" aria-label="Facebook">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
             </div>
             <div class="footer-copyright">
-                <i class="far fa-copyright"></i>
-                2025 SolarSync. All rights reserved.
+                <p>
+                    <i class="far fa-copyright" aria-hidden="true"></i>
+                    2025 SolarSync. All rights reserved.
+                </p>
             </div>
         </div>
     </footer>
